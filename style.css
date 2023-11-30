@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'orgon';
+  src: url('Orgon/Orgon-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+  src: url('Orgon/Orgon-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+/* Sektion str*/ 
+  --margin-in: auto;
+  --width-sec: 80%; 
+
+  /* Typografi */ 
+  --var-h: 'Orgon-bold', sans-serif;
+  --var-p:'Orgon-regluar',sans-serif;
+
+  /* Typografi str*/ 
+  --var-h1:3rem;
+  --var-h2:2.5rem;
+  --var-h3:2rem;
+  --var-h4:1.5rem;
+  --var-p:1rem;
+
+  /* Farver */ 
+  --heading-clr:#008559;
+  --txt-clr:#242424;
+  --bg-clr:#FAFAFA;
+
+  /* Accentfarver for knapper på værdier */ 
+  --var-btn1:#D7EAD9;
+  --var-btn2:#FFD295;
+  --var-btn3:#FFF6AF;
+  --var-btn4:#EBE2EA;
+  --var-btn5:#D7E8F1;
+
+  /* Box shadow */ 
+  --var-box-shadow:box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
