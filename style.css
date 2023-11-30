@@ -3,9 +3,11 @@
   src: url('Orgon/Orgon-Bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+  font-family: "orgon";
   src: url('Orgon/Orgon-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
 }
 
 :root {
@@ -15,7 +17,7 @@
 
   /* Typografi */ 
   --var-h: 'Orgon-bold', sans-serif;
-  --var-p:'Orgon-regluar',sans-serif;
+  --var-base:'Orgon-regluar',sans-serif;
 
   /* Typografi str*/ 
   --var-h1:3rem;
@@ -26,7 +28,7 @@
 
   /* Farver */ 
   --heading-clr:#008559;
-  --txt-clr:#242424;
+  --txt-clr:black;
   --bg-clr:#FAFAFA;
 
   /* Accentfarver for knapper på værdier */ 
@@ -35,13 +37,75 @@
   --var-btn3:#FFF6AF;
   --var-btn4:#EBE2EA;
   --var-btn5:#D7E8F1;
+  --var-btn6:white;
 
   /* Box shadow */ 
-  --var-box-shadow:box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --var-box-s:rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 * {
   margin:0;
   padding:0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+
+section {
+  width: var(--width-sec);
+  margin-inline: var(--margin-in);
+}
+
+h1,h2 {
+  font-family: var(--var-h);
+  color: var(--heading-clr);
+}
+
+h3,h4 {
+  font-family: var(--var-base);
+  font-weight: 400;
+}
+
+
+/* Menu top */
+.menu-top {
+display: flex;
+justify-content: end;
+}
+
+/* Menu bund */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 80%;
+}
+
+/* Knap Drivhus, Modul & Hylder */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-radius: 5px;
+  cursor:pointer;
+  background-color: var(--var-btn6);
+  box-shadow: var(--var-box-s);
 }
