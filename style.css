@@ -147,6 +147,11 @@ cursor: pointer;
   flex-direction: column;
 }
 
+.h4-btn h4 {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 
 
