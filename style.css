@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'orgon';
-  src: url('Orgon/Orgon-Bold.ttf') format('ttf');
+  src: url('Assets/Orgon-fonts/Orgon-Bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
   font-family: "orgon";
-  src: url('Orgon/Orgon-Regular.ttf') format('ttf');
+  src: url('Assets/Orgon-fonts/Orgon-Regular.ttf') format('ttf');
 }
 
 :root {
@@ -15,9 +15,8 @@
   --margin-in: auto;
   --width-sec: 80%; 
   --h2-top:2.5rem;
-  --h2-bot:.5rem;
+  --h2-bot:2rem;
   
-
   /* Typografi */ 
   --var-h: 'Orgon-bold', sans-serif;
   --var-base:'Orgon-regluar',sans-serif;
@@ -28,7 +27,7 @@
   --var-p:1.2rem; /* Indholdstekst & Dato notifiktaion */ 
 
   /* Farver */ 
-  --heading-clr:#008559;
+  --pri-clr:#008559;
   --txt-clr:black;
   --bg-clr:#FAFAFA;
 
@@ -44,6 +43,7 @@
   --var-box-s:rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+/* Styling på layout generelt */
 * {
   margin:0;
   padding:0;
@@ -61,7 +61,7 @@ section {
 
 h1,h2 {
   font-family: var(--var-h);
-  color: var(--heading-clr);
+  color: var(--pri-clr);
 }
 a {
   text-decoration: none;
@@ -77,9 +77,39 @@ h2 {
   margin-top: var(--h2-top);
 }
 
-/* Ikoner */
+/* Ikoner størrelse */
 img {
 height: 20px;
+}
+
+/* Login */
+.login-bg {
+  background-color: var(--pri-clr);
+}
+.login {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 2px solid black;
+}
+
+.loginbtn {
+  display: block;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-inline: var(--margin-in);
+  cursor: pointer;
+}
+
+.login-pass  {
+display: flex;
+justify-content: center;
+font-size: 0.8rem;
+margin-top: 10px;
 }
 
 /* Menu top */
@@ -118,6 +148,7 @@ header {
   height: 25px;
 }
 
+/* Underoverskrift - Overblik, DH1, DH1-M1 & DH1-M1-H1 */
 .h4-txt {
   display: flex;
   gap: 15px;
@@ -166,9 +197,3 @@ cursor: pointer;
   flex-direction: column;
   gap: 10px;
 }
-
-
-
-
-
-
