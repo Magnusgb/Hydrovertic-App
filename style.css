@@ -14,7 +14,9 @@
 /* Sektion str & afstand*/ 
   --margin-in: auto;
   --width-sec: 80%; 
-  --h2-space: 1rem ;
+  --h2-top:2.5rem;
+  --h2-bot:.5rem;
+  
 
   /* Typografi */ 
   --var-h: 'Orgon-bold', sans-serif;
@@ -23,7 +25,7 @@
   /* Typografi str*/ 
   --var-h2:2rem; /* Overskrift */ 
   --var-h3:1.5rem; /* Underoverskrift,knapper,dropdown & notifikation */ 
-  --var-p:1rem; /* Indholdstekst & Dato notifiktaion */ 
+  --var-p:1.2rem; /* Indholdstekst & Dato notifiktaion */ 
 
   /* Farver */ 
   --heading-clr:#008559;
@@ -72,7 +74,12 @@ p,h4,h3 {
 
 h2 {
   font-size: var(--var-h2);
-  margin-top: var(--h2-space);
+  margin-top: var(--h2-top);
+}
+
+/* Ikoner */
+img {
+height: 20px;
 }
 
 /* Menu top */
@@ -82,17 +89,12 @@ justify-content: space-between;
 margin-top: 2rem;
 }
 
-/*Forskellige top fra index og andre sider */
+/* Top menu Index */
 .menu-top-index {
   display: flex;
   justify-content: end;
   margin-top: 2rem;
   }
-
-.h4-txt {
-  display: flex;
-  gap: 10px;
-}
 
 /* Menu bund */
 header {
@@ -110,7 +112,20 @@ header {
   bottom: 0;
   height: 40px;
   width: 80%;
-  background-color: white;
+}
+
+.menu-bottom img {
+  height: 25px;
+}
+
+.h4-txt {
+  display: flex;
+  gap: 15px;
+  margin-bottom: var(--h2-bot);
+}
+
+.h4-txt img {
+  height: 1rem;
 }
 
 /* Knap Drivhus, Modul & Hylder */
@@ -130,6 +145,10 @@ header {
   box-shadow: var(--var-box-s);
 }
 
+.container-btn p {
+  font-size: var(--var-p);
+}
+
 .dh-btn {
   display: flex;
   justify-content: space-between;
@@ -145,12 +164,9 @@ cursor: pointer;
 .txt-btn {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.h4-btn h4 {
-  display: flex;
-  justify-content: flex-start;
-}
 
 
 
