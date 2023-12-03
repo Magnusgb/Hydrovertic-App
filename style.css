@@ -40,7 +40,8 @@
   --var-btn6:white;
 
   /* Box shadow */ 
-  --var-box-s:rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --var-boxs-btn:rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --var-boxs-noti: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
 }
 
 /* Styling på layout generelt */
@@ -67,9 +68,13 @@ a {
   text-decoration: none;
   color: black;
 }
-p,h4,h3 {
+p,h3 {
   font-family: var(--var-base);
   font-weight: 400;
+}
+
+h4 {
+  font-family: var(--var-h);
 }
 
 h2 {
@@ -173,7 +178,7 @@ header {
   border-radius: 5px;
   cursor:pointer;
   background-color: var(--var-btn6);
-  box-shadow: var(--var-box-s);
+  box-shadow: var(--var-boxs-btn);
 }
 
 .container-btn p {
@@ -197,3 +202,56 @@ cursor: pointer;
   flex-direction: column;
   gap: 10px;
 }
+
+/* Notifikationer */ 
+.container-noti {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 120px;
+  border-radius: 5px;
+  cursor:pointer;
+  background-color: var(--var-btn6);
+  box-shadow: var(--var-boxs-noti);
+  padding: 15px 30px;
+}
+
+.container-noti-x {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-noti-ikon {
+  display: flex;
+  gap: 15px;
+}
+
+.container-clr1 {
+  width: 20px;
+  height: 120px;
+  background-color: var(--var-btn1);
+  position: absolute;
+  top: 113px;
+  left:35px;
+}
+
+.container-clr2{
+  width: 20px;
+  height: 120px;
+  background-color: var(--var-btn2);
+  position: absolute;
+  top: 253px;
+  left:35px;
+}
+
+.container-clr3{
+  width: 20px;
+  height: 120px;
+  background-color: var(--var-btn4);
+  position: absolute;
+  top: 393px;
+  left:35px;
+}
+
+
+
