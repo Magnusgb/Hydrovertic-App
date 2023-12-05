@@ -88,20 +88,33 @@ height: 20px;
 .login-bg {
   background-color: var(--pri-clr);
 }
+
 .login {
   width: 100%;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
   padding-left: 10px;
-  border: 2px solid black;
+  border: none;
+}
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-login {
+height: 110px;
+margin-top: 100px;
+margin-bottom: 50px;
 }
 
 .loginbtn {
   display: block;
   width: 80%;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   margin-inline: var(--margin-in);
   cursor: pointer;
@@ -112,6 +125,7 @@ display: flex;
 justify-content: center;
 font-size: 0.8rem;
 margin-top: 10px;
+color: white;
 }
 
 /* Menu top */
@@ -142,8 +156,9 @@ header {
   font-size: 1.5rem;
   position: fixed;
   bottom: 0;
-  height: 40px;
+  height: 60px;
   width: 80%;
+
 }
 
 .menu-bottom img {
@@ -298,8 +313,6 @@ cursor: pointer;
 }
 
 /* Hylde data side */ 
-
-
 .h2-data {
   color: var(--txt-clr);
   margin-bottom:1.2rem;
@@ -308,14 +321,20 @@ cursor: pointer;
 .containerbtn {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 1.2rem;
+
 }
 
 .data-btn {
   border: none;
   padding: 8px;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.data-btn:focus {
+  font-weight: bold;
 }
 
 .clr1 {
@@ -386,4 +405,35 @@ height: 10px;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Responsivt web */ 
+@media (min-width:1024px) {
+  
+  .container-btn {
+    max-width: 60%;
+  }
+
+  .container-noti {
+    max-width: 60%;
+  }
+
+  .containerbtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 370px;
+  }
+
+  .data-web {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+  width: 300px;
+}
+
+.popup-menu {
+  max-width: 60%;
+}
 }
