@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="Assets/Logo/Favicon.png">
-  <script src="script.js" defer></script>
+  <script src="script.js"defer></script>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <header>
   <section>
       <div class="menu-top-index">
-      <img src="Assets/Ikoner/sog.svg" alt="Søgefilter top">
+      <img src="Assets/Ikoner/sog.svg" id="button-click" alt="Søgefilter top">
     </div>
   </section>
     <nav class="menu-bottom">
@@ -70,8 +70,29 @@
       </div>
         <img class="ikonbtn" src="Assets/Ikoner/graf.svg" alt="Graf knap ikon"> 
       </div>
-
     </div>
-  </section>
+
+  <div id="filter-seachbox">
+    <h4>Vis kun</h4>
+  
+<div class="filter">
+  <input type="checkbox" name="Basilikum">
+  <label for="Basilikum">Basilikum</label>
+</div>
+
+<div class="filter">
+  <input type="checkbox" name="Mynte">
+  <label for="Mynte">Mynte</label>
+</div>
+
+<div class="filter">
+  <input type="checkbox" name="Persille">
+  <label for="Persille">Persille</label>
+</div>
+
+  <button id="save-button">Ok</button>
+</div>
+
+</section>
 </body>
 </html>

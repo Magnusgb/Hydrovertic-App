@@ -64,7 +64,7 @@ h1,h2 {
   font-family: var(--var-h);
   color: var(--pri-clr);
 }
-a {
+a,label {
   text-decoration: none;
   color: black;
   font-family: var(--var-base);
@@ -455,6 +455,44 @@ height: 10px;
 }
 
 
+/* Søgefilter */
+
+.filter {
+  display: flex;
+  gap: 5px;
+}
+
+#save-button {
+  border: none;
+  width: 5rem;
+  height: 1.5rem;
+  background-color: var(--pri-clr);
+  color: var(--var-btn1);
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#filter-seachbox {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#filter-seachbox h4 {
+  margin-bottom: .5rem;
+}
+
+#button-click {
+  cursor: pointer;
+  position: relative;
+}
+
 /* Responsivt Tablet */ 
 @media(min-width:768px) {
   
@@ -476,6 +514,11 @@ height: 10px;
 .popup-menu {
   max-width: 60%;
 }
+
+#filter-seachbox {
+  right: 60px;
+}
+
 }
 
 /* Responsivt web */ 
@@ -517,5 +560,9 @@ height: 120px;
 }
 .venstrepil {
   display: none;
+}
+
+#filter-seachbox {
+  right: 140px;
 }
 }
