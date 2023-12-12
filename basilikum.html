@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Søgeresultat - Basilikum</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="Hydrovertic/logo/ikon.png">
-  <script src="script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="Assets/Logo/Favicon.png">
 </head>
 
 <body>
   <header>
-    <section class="menu-top">
+    <div class="menu-top">
       <a href="index.html"><img src="Assets/Ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
       <img src="Assets/Ikoner/sog.svg" id="button-click" alt="Søgefilter top">
-    </section>
+    </div>
     <nav class="menu-bottom">
       <a href="index.html">
         <img src="Assets/Ikoner/overblik.svg" alt="Overblik ikon menu">
@@ -73,27 +72,24 @@
         </div>
       </div>
     </div>
-
+    
     <div id="filter-seachbox">
       <h4>Vis kun</h4>
-    
+      <div class="filter">
+        <input type="checkbox" id="Basilikum" name="Basilikum">
+        <label for="Basilikum">Basilikum</label>
+    </div>
   <div class="filter">
-    <input type="checkbox" name="Basilikum">
-    <label for="Basilikum">Basilikum</label>
-  </div>
-  
-  <div class="filter">
-    <input type="checkbox" name="Mynte">
+    <input type="checkbox" id="Mynte"  name="Mynte">
     <label for="Mynte">Mynte</label>
   </div>
-  
   <div class="filter">
-    <input type="checkbox" name="Persille">
+    <input type="checkbox" id="Persille"  name="Persille">
     <label for="Persille">Persille</label>
   </div>
-  
     <button id="save-button">Ok</button>
   </div>
+  <script src="script.js" defer></script>
   </section>
 </body>
 </html>

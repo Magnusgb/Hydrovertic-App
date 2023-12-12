@@ -5,7 +5,7 @@ var saveButton = document.getElementById("save-button");
 // Array med plantenavne
 var planteNavne = ["Basilikum", "Mynte", "Persille"];
 
-// Eventlytter til knappen, der håndterer visning/skjul af filter-boksen
+// Event til knappen, der håndterer visning/skjul af filter-boksen
 button.addEventListener("click", function () {
   if (filterBox.style.display === "none" || filterBox.style.display === "") {
     filterBox.style.display = "block";
@@ -14,7 +14,7 @@ button.addEventListener("click", function () {
   }
 });
 
-// Eventlytter til gem-knappen
+// Event til gem-knappen
 saveButton.addEventListener("click", function () {
 
   // Loop gennem plantenavne og håndter valgte planter
@@ -22,7 +22,7 @@ saveButton.addEventListener("click", function () {
     var planteNavn = planteNavne[i];
     var checkbox = document.querySelector('input[name="' + planteNavn + '"]');
 
-    // Laver loop igennem igennem array, og tjekker
+    // Laver loop igennem igennem array, og tjekker hvad der er trykket på
     if (checkbox.checked) {
       if (planteNavn === "Basilikum") {
         window.location.href = 'basilikum.html';

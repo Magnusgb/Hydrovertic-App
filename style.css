@@ -60,6 +60,11 @@ section {
   margin-inline: var(--margin-in);
 }
 
+.menu-top {
+  width: var(--width-sec);
+  margin-inline: var(--margin-in);
+}
+
 h1,h2 {
   font-family: var(--var-h);
   color: var(--pri-clr);
@@ -138,6 +143,8 @@ height: 1.5rem;
 }
 
 .loginbtn {
+  display: flex;
+  align-items: center;
   height: 40px;
   padding: 0 8rem;
   border-radius: 5px;
@@ -167,6 +174,8 @@ margin-top: 2rem;
   display: flex;
   justify-content: end;
   margin-top: 2rem;
+  width: var(--width-sec);
+  margin-inline: var(--margin-in);
   }
 
 /* Menu bund */
@@ -456,7 +465,6 @@ height: 10px;
 
 
 /* Søgefilter */
-
 .filter {
   display: flex;
   gap: 5px;
