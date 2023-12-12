@@ -1,31 +1,49 @@
-//Get modal element
 let modal = document.getElementById('simpleModal');
-//Get open modal button
+//åben modal
 let modalBtn = document.getElementById('modalBtn');
-//Get close button
+//luk modal
 let closeBtn = document.getElementsByClassName('closeBtn')[0];
+let gemBtn = document.getElementsByClassName('gemBtn')[0];
 
-//Listen for open click
+//åben
 modalBtn.addEventListener('click', openModal)
-//Listen for close click
+//luk
 closeBtn.addEventListener('click', closeModal)
-//Listen for outside click
+gemBtn.addEventListener('click', closeModal)
 window.addEventListener('click', outsideClick)
 
-//funcion to open modal
+//åben
 function openModal(){
     modal.style.display = 'block';
 }
 
-//funcion to close modal
+//luk
 function closeModal(){
     modal.style.display = 'none';
 }
 
-//funcion to close modal if outside click
 function outsideClick(e){
     if(e.target == modal){
         modal.style.display = 'none';
     }
 }
 
+
+//optionbox
+const selected = document.querySelector(".selected");
+const optionsContainer = document.querySelector(".options-container");
+
+const optionsList = document.querySelectorAll(".option");
+
+//åben
+selected.addEventListener("click", () => {
+  optionsContainer.classList.toggle("active");
+});
+
+//valg + luk
+optionsList.forEach(listen => {
+  listen.addEventListener("click", () => {
+    selected.innerHTML = listen.querySelector("label").innerHTML;
+    optionsContainer.classList.remove("active");
+  });
+});
