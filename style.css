@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'orgon';
-  src: url('Assets/Orgon-fonts/Orgon-Bold.ttf') format('ttf');
+  src: url('Assets/Orgon-fonts/Orgon-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
   font-family: "orgon";
-  src: url('Assets/Orgon-fonts/Orgon-Regular.ttf') format('ttf');
+  src: url('Assets/Orgon-fonts/Orgon-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -69,9 +69,13 @@ a {
   color: black;
   font-family: var(--var-base);
 }
-p,h3,h4{
+p,h4{
   font-family: var(--var-base);
   font-weight: 400;
+}
+
+h3 {
+  font-family: var(--var-h);
 }
  
 h2 {
@@ -81,43 +85,66 @@ h2 {
 
 /* Ikoner størrelse */
 img {
-height: 20px;
+height: 1.5rem;
+}
+
+.xikon-noti {
+  height: 1rem;
 }
 
 /* Login */
-.login-bg {
-  background-color: var(--pri-clr);
+.login-sec {
+  width: var(--width-sec);
+}
+
+.whitebg {
+  background-color: var(--bg-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.greenbg {
+  background-color: #008559;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenbg img {
+  height: 100px;
 }
 
 .login {
-  width: 100%;
+  width: 80%;
   height: 40px;
   border-radius: 5px;
   margin-bottom: 20px;
   padding-left: 10px;
   border: none;
+  box-shadow: var(--var-boxs-btn);
 }
+
 .login-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.logo-login {
-height: 110px;
-margin-top: 100px;
-margin-bottom: 50px;
+  height: 30vh;
+  width: 100vw;
+  background-color: var(--pri-clr);
 }
 
 .loginbtn {
-  display: block;
-  width: 80%;
-  height: 50px;
+  height: 40px;
+  padding: 0 8rem;
   border-radius: 5px;
   border: none;
-  margin-inline: var(--margin-in);
   cursor: pointer;
+  background-color: var(--pri-clr);
+  color: var(--var-btn1);
 }
 
 .login-pass  {
@@ -125,7 +152,7 @@ display: flex;
 justify-content: center;
 font-size: 0.8rem;
 margin-top: 10px;
-color: white;
+color: black;
 }
 
 /* Menu top */
@@ -149,21 +176,23 @@ header {
 }
 
 .menu-bottom {
+  width: 80%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
   position: fixed;
   bottom: 0;
   height: 60px;
-  width: 80%;
-
+  background-color: white;
+  z-index: 1;
+  box-shadow: var(--var-boxs-btn);
 }
 
 .menu-bottom img {
-  height: 25px;
+  height: 1.8rem;
 }
+
 
 /* Underoverskrift - Overblik, DH1, DH1-M1 & DH1-M1-H1 */
 .h4-txt {
@@ -228,11 +257,12 @@ cursor: pointer;
   gap: 5px;
   padding-inline-start: 30px;
   padding-inline-end: 10px;
+  position: relative;
 }
 
 .container-noti-x {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 
@@ -247,8 +277,8 @@ cursor: pointer;
   height: 120px;
   background-color: var(--var-btn1);
   position: absolute;
-  top: 113px;
-  left:35px;
+  top: 0px;
+  left: 0px;
 }
 
 .container-clr2{
@@ -256,8 +286,8 @@ cursor: pointer;
   height: 120px;
   background-color: var(--var-btn2);
   position: absolute;
-  top: 253px;
-  left:35px;
+  top: 0px;
+  left: 0px;
 }
 
 .container-clr3{
@@ -265,8 +295,8 @@ cursor: pointer;
   height: 120px;
   background-color: var(--var-btn4);
   position: absolute;
-  top: 393px;
-  left:35px;
+  top: 0px;
+  left: 0px;
 }
 
 /* Pop up menu */
@@ -316,6 +346,22 @@ cursor: pointer;
 .h2-data {
   color: var(--txt-clr);
   margin-bottom:1.2rem;
+}
+
+.container-data {
+  display: flex;
+  gap:15px;
+  position: relative;
+}
+
+.x-container {
+position: absolute;
+right: 0;
+}
+
+.h4-container {
+  margin-left: 27px;
+  font-size: 14px;
 }
 
 .containerbtn {
@@ -375,6 +421,7 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .dropdown img {
@@ -384,10 +431,10 @@ height: 10px;
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 2.3rem;
+  left: 2.3rem;
   background-color: #f9f9f9;
   width: 70%;
-  margin-top: 13rem;
-  margin-left: .7rem;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -405,6 +452,30 @@ height: 10px;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+/* Responsivt Tablet */ 
+@media(min-width:768px) {
+  
+  .containerbtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 370px;
+  }
+
+  .data-web {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+  width: 300px;
+}
+
+.popup-menu {
+  max-width: 60%;
+}
 }
 
 /* Responsivt web */ 
@@ -435,5 +506,16 @@ height: 10px;
 
 .popup-menu {
   max-width: 60%;
+}
+
+.login {
+  max-width: 300px;
+}
+
+.greenbg img {
+height: 120px;
+}
+.venstrepil {
+  display: none;
 }
 }
