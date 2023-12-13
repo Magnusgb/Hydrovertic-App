@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="Hydrovertic/logo/ikon.png">
   <script src="script.js" defer></script>
+  <script src="redigering-planter.js" defer></script>
+  <link rel="stylesheet" href="style2.css"
 </head>
 
 <body>
   <header>
-    <section class="menu-top">
-      <a href="index.html"><img src="Assets/Ikoner/arrow-v.svg" alt="Venstre klik pil"></a>
-      <img src="Assets/Ikoner/sog.svg" alt="Søgefilter top">
-    </section>
+    <div class="menu-top">
+      <a href="index.html"><img src="Assets/Ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
+      <img src="Assets/Ikoner/sog.svg" id="button-click" alt="Søgefilter top">
+    </div>
     <nav class="menu-bottom">
       <a href="index.html">
         <img src="Assets/Ikoner/overblik.svg" alt="Overblik ikon menu">
@@ -27,11 +29,53 @@
   <section> 
     <div class="heading">
       <h2>DH1</h2>
-      <div class="h4-txt">
+    </div>
+    
+    <div class="knap">
       <h4>Basilikum - Mynte - Persille</h4>
-      <img src="Assets/Ikoner/rediger.svg" alt="Rediger modul ikon">
+      <button id="modalBtn" class="button">
+        <img src="Assets/Ikoner/rediger.svg" alt="Rediger modul ikon">
+      </button>
+
+    <div id="simpleModal" class="modal"> 
+      <div class="modal-content">
+        <img src="Assets/Ikoner/x-menu.svg" class="closeBtn">
+
+        <div class="modal-header">
+          <h1>Redigering af HELE drivhuset</h1>
+        </div>
+
+        <div class="modal-body">
+    
+          <div class="select-box">
+            <div class="options-container">
+                <div class="option">
+                  <input class="plante"/>
+                  <label for="basilikum">Basilikum</label>
+                </div>
+
+                <div class="option">
+                  <input class="plante"/>
+                  <label for="salat">Salat</label>
+                </div>
+
+                <div class="option">
+                  <input class="plante"/>
+                  <label for="mynte">Mynte</label>
+                </div>
+
+            </div>
+            <div class="selected">
+              Vælg plante
+            </div>
+          </div>
+
+        </div>
+
+        <button class="gemBtn">Gem</button>
+      </div>
     </div>
-    </div>
+
   
     <div class="wrapper">
 
@@ -70,6 +114,23 @@
       </div>
 
     </div>
+    <div id="filter-seachbox">
+      <h4>Vis kun</h4>
+    <div class="filter">
+      <input type="checkbox" id="Basilikum" name="Basilikum">
+      <label for="Basilikum">Basilikum</label>
+    </div>
+    <div class="filter">
+      <input type="checkbox" id="Mynte"  name="Mynte">
+      <label for="Mynte">Mynte</label>
+    </div>
+    <div class="filter">
+      <input type="checkbox" id="Persille"  name="Persille">
+      <label for="Persille">Persille</label>
+    </div>
+      <button id="save-button">Ok</button>
+    </div>
+    <script src="script.js" defer></script>
   </section>
 </body>
 </html>
