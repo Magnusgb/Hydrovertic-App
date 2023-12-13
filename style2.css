@@ -11,7 +11,7 @@
 }
 
 .modal{
-    /*display: none;*/
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0; 
@@ -125,6 +125,7 @@
 .gemBtn {
     border: 0;
     margin: 20px auto;
+    border-radius: 4px;
     background: #008559;
     color: #D7EAD9;
     width: 100%;

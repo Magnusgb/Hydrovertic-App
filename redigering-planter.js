@@ -6,7 +6,7 @@ let closeBtn = document.getElementsByClassName('closeBtn')[0];
 let gemBtn = document.getElementsByClassName('gemBtn')[0];
 
 //åben
-modalBtn.addEventListener('click', openModal)
+modalBtn.addEventListener("click", openModal)
 //luk
 closeBtn.addEventListener('click', closeModal)
 gemBtn.addEventListener('click', closeModal)
