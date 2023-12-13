@@ -347,9 +347,12 @@ justify-content: space-between;
   display: none;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
 }
 
-.popup-menu img {
+.heading img {
   height: 35px;
 }
 
@@ -370,7 +373,7 @@ justify-content: space-between;
   cursor:pointer;
   background-color: var(--var-btn6);
   box-shadow: var(--var-boxs-btn);
-  height: 25vh;
+  height: 15vh;
   margin-bottom: var(--h2-bot);
   width: 80%;
   margin-inline: var(--margin-in) ;
@@ -503,6 +506,47 @@ height: 10px;
   display: block;
 }
 
+.data-img {
+margin-top: 20px;
+width: 100%;
+height: 100%;
+margin-bottom: 100px;
+box-shadow: var(--var-boxs-noti);
+}
+
+/* Data pop up */
+.h2-data {
+display: flex;
+justify-content: space-between;
+}
+
+.x-data {
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.data-popup {
+  position: absolute;
+  top: 100px;
+  background-color: var(--bg-clr);
+  box-shadow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 100%;
+}
+
+.section-popup {
+  width: 80%;
+  margin-inline: var(--margin-in);
+}
+
+.popupdata-img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  box-shadow: var(--var-boxs-noti);
+}
+
+
 
 /* Søgefilter */
 .filter {
@@ -541,11 +585,132 @@ height: 10px;
   position: relative;
 }
 
+#modalBtn {
+  cursor: pointer;
+}
 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal-content{
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px 0;
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+}
+
+.closeBtn{
+    float: right;
+    font-size: 25px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    cursor: pointer;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+  
+.select-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Orgon-regluar',sans-serif;
+  }
+  
+.select-box .options-container {
+    background: var(--bg-clr);
+    color: #000000;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 4px;
+    overflow: hidden;
+    order: 1;
+  }
+
+.selected {
+    background: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: #000000;
+    position: relative;
+    order: 0;
+  }
+
+  .selected::after {
+    content: "";
+    background: url("/Assets/Ikoner/arrow.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 5px;
+    top: 18px;
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -18px;
+  }
+  
+.select-box .option,
+.selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+.select-box .option:hover {
+    background: #D7EAD9;
+  }
+  
+.select-box label {
+    cursor: pointer;
+  }
+  
+.select-box .option .plante {
+    display: none;
+  }
+
+.gemBtn {
+    border: 0;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: #008559;
+    color: #D7EAD9;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 /* Responsivt Tablet */ 
 @media(min-width:768px) {
-
   .menu-bottom {
     padding: 0 4.8rem;
   }
@@ -569,8 +734,11 @@ height: 10px;
   right: 60px;
 }
 
+.data-img {
+  margin-top: 50px;
+  width: 690px;
 }
-
+}
 /* Responsivt web */ 
 @media (min-width:1024px) {
   
@@ -614,7 +782,6 @@ height: 10px;
   #filter-seachbox {
   right: 140px;
 }
-
 
 .container-menu {
 width: 60%;

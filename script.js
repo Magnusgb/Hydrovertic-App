@@ -35,3 +35,4 @@ saveButton.addEventListener("click", function () {
   }
   alert("Vælg mindst en plante.");
 });
+

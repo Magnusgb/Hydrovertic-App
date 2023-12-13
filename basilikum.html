@@ -19,7 +19,10 @@
         <img src="Assets/Ikoner/overblik.svg" alt="Overblik ikon menu">
       </a>
       <a href="notifikation.html"><img src="Assets/Ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
-      <a href="#"><img src="Assets/Ikoner/menu.svg" alt="Burgemenu"></a>
+      <div class="hamburger">
+        <a href="#"><img class="menuIcon" src="Assets/Ikoner/menu.svg" alt="Burgermenu"></a>
+        <a href="#"><img class="closeIcon" src="Assets/Ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
+      </div>
     </nav>
   </header>
 
@@ -91,5 +94,28 @@
   </div>
   <script src="script.js" defer></script>
   </section>
+  <!--Pop up menu-->
+<div class="popup-menu menu">
+  <div class="log-details heading">
+    <img src="Assets/Ikoner/profilb.png" alt="Profilbillede - menu">
+    <p>Jens Mikkelsen <br> Gartneri</p>
+  </div>
+<div class="container-menu">
+  <div class="dh-btn">
+      <p class="txt-btn">Rediger drivhus opsætning</p>
+      <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+  </div>
+  <div class="dh-btn menuItem">
+    <p class="txt-btn menuItem">Opret ny medarbejder</p>
+    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+  </div>
+  <div class="dh-btn menuItem">
+    <p class="txt-btn">Indstillinger</p>
+    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+  </div>
+  </div>
+    <button class="menubtn">Log ud</button>
+</div>
+<script src="burgermenu.js" defer></script>
 </body>
 </html>

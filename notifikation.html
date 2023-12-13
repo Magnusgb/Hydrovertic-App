@@ -13,7 +13,10 @@
     <nav class="menu-bottom">
      <a href="index.html"> <img src="Assets/Ikoner/overblik.svg" alt="Hjem knap menu"></a>
       <a href="notifikation.html"><img src="Assets/Ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
-      <a href="#"><img src="Assets/Ikoner/menu.svg" alt=""></a>
+      <div class="hamburger">
+        <a href="#"><img class="menuIcon" src="Assets/Ikoner/menu.svg" alt="Burgermenu"></a>
+        <a href="#"><img class="closeIcon" src="Assets/Ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
+      </div>
     </nav>
   </header>
 
@@ -22,7 +25,7 @@
       <h2>Notifikationer</h2>
     </div>
     <div class="wrapper">
-
+      <a href="Data.html">
       <div class="container-noti">
         <div class="container-noti-x">
           <h3>DH1- M1 - H1</h3>
@@ -35,11 +38,11 @@
        <span class="container-clr1"></span>
         </div>
        </div>
-
-    <a href="modul.html">
+      </a>
+    
       <div class="container-noti noti-content">
         <div class="container-noti-x">
-          <h3>DH1- M1 - H1</h3>
+          <h3>DH1- M2 - H3</h3>
           <img src="Assets/Ikoner/x-menu.svg" class="xikon-noti" alt="Kryds til at lukke">
         </div>
           <h4>Tidspunkt: 9:32 - 27/11 2023</h4>
@@ -49,9 +52,9 @@
        <span class="container-clr2"></span>
         </div>
        </div>
-    </a>
 
-    <a href="modul.html">
+
+
       <div class="container-noti noti-content">
         <div class="container-noti-x">
           <h3>DH1- M1 - H1</h3>
@@ -64,9 +67,32 @@
        <span class="container-clr3"></span>
         </div>
        </div>
-    </a>
   </div>
-      
   </section>
+  
+<!--Pop up menu-->
+<div class="popup-menu menu">
+  <div class="log-details heading">
+    <img src="Assets/Ikoner/profilb.png" alt="Profilbillede - menu">
+    <p>Jens Mikkelsen <br> Gartneri</p>
+  </div>
+<div class="container-menu">
+  <div class="dh-btn">
+      <p class="txt-btn">Rediger drivhus opsætning</p>
+      <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+  </div>
+  <div class="dh-btn menuItem">
+    <p class="txt-btn menuItem">Opret ny medarbejder</p>
+    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+  </div>
+  <div class="dh-btn menuItem">
+    <p class="txt-btn">Indstillinger</p>
+    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+  </div>
+  </div>
+    <button class="menubtn">Log ud</button>
+</div>
+<script src="burgermenu.js" defer></script>
+
 </body>
 </html>

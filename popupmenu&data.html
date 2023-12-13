@@ -3,26 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pop up</title>
+  <title>Pop up Drivhus</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="Assets/Logo/Favicon.png">
-  <script src="burgermenu.js" defer></script>
 </head>
-
 <body>
   <header>
+    <div class="menu-top">
+      <a href="modul.html"><img src="Assets/Ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
+      <img src="Assets/Ikoner/sog.svg" id="button-click" alt="Søgefilter top">
+    </div>
     <nav class="menu-bottom">
       <a href="index.html">
         <img src="Assets/Ikoner/overblik.svg" alt="Overblik ikon menu">
       </a>
       <a href="notifikation.html"><img src="Assets/Ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
-      <div class="hamburger">
-      <a href="#"><img class="menuIcon" src="Assets/Ikoner/menu.svg" alt="Burgermenu"></a>
-      <a href="#"><img class="closeIcon" src="Assets/Ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
+      <div class="pophamburger">
+      <a href="#"><img class="menuIconk" src="Assets/Ikoner/menu.svg" alt="Burgermenu"></a>
     </div>
   </header>
+  <section class="data-popup menudata">
+    <div class="section-popup">
+  <div class="h2-data">
+  <h2>Dataoversigt</h2>
+  <a href="index.html"><img src="Assets/Ikoner/x-menu.svg" class="x-data" alt="Luk data side"></a>
+</div>
+  <h4 class="h2-data">Drivhus 1</h4>
+  <div class="data-web">
+    <div class="containerbtn">
+    <button class="data-btn clr1">Temperatur</button>
+    <button class="data-btn clr2">Luftfugtighed</button>
+    <button class="data-btn clr3">Kuldioxid</button>
+    <button class="data-btn clr4">Vands PH-værdi</button>
+    <button class="data-btn clr5">Vands ledningsevne</button>
+  </div>
+<div class="dropdown-wrapper">
+<div class="dropdown">
+  <a>Tidsramme</a>
+  <img src="Assets/Ikoner/arrow.svg" alt="Dropdown pil">
+  <div class="dropdown-content">
+    <a href="#">1 Dag</a>
+    <a href="#">1 Uge</a>
+    <a href="#">1 Måned</a>
+    <a href="#">1 Måned</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <a>Interval</a>
+  <img src="Assets/Ikoner/arrow.svg" alt="Dropdown pil">
+  <div class="dropdown-content">
+    <a href="#">15 Minutter</a>
+    <a href="#">30 Minutter</a>
+    <a href="#">1 Time</a>
+    <a href="#">1 Dag</a>
+    <a href="#">1 Uge</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <a>Graf</a>
+  <img class="img-dropdown" src="Assets/Ikoner/arrow.svg" alt="Dropdown pil">
+  <div class="dropdown-content">
+    <a href="#">Søjle</a>
+    <a href="#">Linje</a>
+    <a href="#">Område</a>
+  </div>
+</div>
+</div>
+</div>
+<img src="Assets/Ikoner/data-luft.png" class="data-img" alt="Data graf på temperaturer">
+</div>
+</section>
 
 
+
+
+<!--
 <div class="popup-menu menu">
   <div class="log-details heading">
     <img src="Assets/Ikoner/profilb.png" alt="Profilbillede - menu">
@@ -44,7 +101,7 @@
   </div>
     <button class="menubtn">Log ud</button>
 </div>
-
+-->
 
 </body>
 </html>
