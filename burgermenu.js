@@ -4,18 +4,20 @@ const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
-  
+const popupmenu = document.querySelector(".popup-menu");
 
- 
+
 /*synligheden af ikonerne burgermenu og kryds*/
 function toggleMenu() {
     if (menu.classList.contains("showMenu")) {
       menu.classList.remove("showMenu");
       closeIcon.style.display = "none";
+      popupmenu.style.display = "none";
       menuIcon.style.display = "block";
     } else {
       menu.classList.add("showMenu");
       closeIcon.style.display = "block";
+      popupmenu.style.display = "flex";
       menuIcon.style.display = "none";
     }
 }

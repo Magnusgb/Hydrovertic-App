@@ -314,8 +314,39 @@ justify-content: space-between;
 }
 
 /* Pop up menu */
-.popup-menu {
+.menu{
+  position: relative;
+  transition: transform 0.1s;
+  padding-top: 1.5rem;
   height: 80vh;
+  background-color: var(--bg-clr);
+  box-shadow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#menuItems {
+  display: none;  
+}
+
+.hamburger{
+  background-color: transparent;
+  border: 0;
+  z-index: 100;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.closeIcon{
+  display: none;
+}
+
+.popup-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 .popup-menu img {
@@ -324,6 +355,8 @@ justify-content: space-between;
 
 .log-details {
   display: flex;
+  width: var(--width-sec);
+  margin-inline: var(--margin-in);
   gap: 15px;
   margin-top: var(--h2-top);
   margin-bottom: var(--h2-bot);
@@ -339,15 +372,17 @@ justify-content: space-between;
   box-shadow: var(--var-boxs-btn);
   height: 25vh;
   margin-bottom: var(--h2-bot);
+  width: 80%;
+  margin-inline: var(--margin-in) ;
 }
 
 .container-menu img {
-  height: 10px;
+  height: 7px;
   transform: rotate(270deg);
 }
 
 .menubtn {
-  width: 100%;
+  width: var(--width-sec);
   border: none;
   border-radius: 10px;
   height: 40px;
@@ -506,6 +541,8 @@ height: 10px;
   position: relative;
 }
 
+
+
 /* Responsivt Tablet */ 
 @media(min-width:768px) {
 
@@ -528,13 +565,10 @@ height: 10px;
   width: 300px;
 }
 
-.popup-menu {
-  max-width: 60%;
-}
-
 #filter-seachbox {
   right: 60px;
 }
+
 }
 
 /* Responsivt web */ 
@@ -562,26 +596,33 @@ height: 10px;
     gap: 20px;
 }
 
-.dropdown {
+  .dropdown {
   width: 300px;
 }
 
-.popup-menu {
-  max-width: 60%;
-}
-
-.login {
+  .login {
   max-width: 300px;
 }
 
-.greenbg img {
-height: 120px;
+  .greenbg img {
+  height: 120px;
 }
-.venstrepil {
+  .venstrepil {
   display: none;
 }
 
-#filter-seachbox {
+  #filter-seachbox {
   right: 140px;
+}
+
+
+.container-menu {
+width: 60%;
+margin-right: 27rem;
+}
+
+.menubtn {
+  width: 60%;
+  margin-right: 18.5rem;
 }
 }
