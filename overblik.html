@@ -3,114 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DH1</title>
+  <title>Overblik</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
 </head>
-
 <body>
   <header>
     <!--Menu top-->
-    <div class="menu-top">
-      <a href="overblik.html"><img src="assets/ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
+    <div class="menu-top-index">
       <img src="assets/ikoner/sog.svg" id="button-click" alt="Søgefilter top">
     </div>
     <!--Menu bund-->
     <nav class="menu-bottom">
-      <a href="overblik.html">
-        <img src="assets/ikoner/overblik.svg" alt="Overblik ikon menu">
-      </a>
+      <a href="overblik.html"><img src="assets/ikoner/overblik.svg" alt="Overblik ikon menu"></a>
       <a href="notifikation.html"><img src="assets/ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
       <div class="hamburger">
-        <a href="#"><img class="menuIcon" src="assets/ikoner/menu.svg" alt="Burgermenu"></a>
-        <a href="#"><img class="closeIcon" src="assets/ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
-      </div>
+        <img class="menuIcon" src="assets/ikoner/menu.svg" alt="Burgermenu">
+        <img class="closeIcon" src="assets/ikoner/x-menu.svg" alt="Luk Burgermenu">
+    </div>
     </nav>
   </header>
+
   <section> 
-<!--overskrift-->
+    <!--Overskrift-->
     <div class="heading">
-      <h2>DH1</h2>
-    </div>
-  <!--Underoverskrift-->
+      <h2>Overblik</h2>
     <div class="h4-txt">
       <h4>Basilikum - Mynte - Persille</h4>
-      <img src="assets/ikoner/rediger.svg" id="modalBtn" alt="Rediger modul ikon">
+    </div>
     </div>
 
-
-    <!--Pop up redigering modul/hylde-->
-    <div id="simpleModal" class="modal"> 
-      <div class="modal-content">
-        <img src="assets/ikoner/x-menu.svg" class="closeBtn" alt="Lukning af modal">
-        <div class="modal-header">
-          <h3>Redigering af hele drivhuset</h3>
-        </div>
-        <div class="modal-body">
-          <div class="select-box">
-            <div class="options-container">
-              <div class="option">
-                <input id="basilikum" class="plante">
-                <label for="basilikum">Basilikum</label>
-              </div>
-              <div class="option">
-                <input id="salat" class="plante">
-                <label for="salat">Persille</label>
-              </div>
-              <div class="option">
-                <input id="mynte" class="plante">
-                <label for="mynte">Mynte</label>
-              </div>
-            </div>
-            <div class="selected">
-              Vælg plante
-            </div>
+    <!--Drivhus oversigt-->
+    <div class="wrapper">
+        <div class="container-btn dh-btn">
+          <div class="txt-btn">
+            <a href="modul.html">
+            <p>Drivhus 1</p>
+            <h4>Basilikum - Mynte - Persille</h4></a>
+          </div>
+          <div class="ikon-btn">
+          </div>
+          <div class="ikon-btn">
+            <img class="ikonbtn" src="assets/ikoner/advarsel.svg" alt="Advarsels ikon">
+            <a href="datapopup.html">
+              <img class="ikonbtn" src="assets/ikoner/graf.svg" alt="Graf knap ikon">
+            </a>
           </div>
         </div>
-        <button class="gemBtn">Gem</button>
+      <div class="container-btn dh-btn">
+        <div class="txt-btn">
+        <p>Drivhus 2</p>
+        <h4>Basilikum</h4>
+      </div>
+        <img class="ikonbtn" src="assets/ikoner/graf.svg" alt="Graf knap ikon"> 
+      </div>
+      <div class="container-btn dh-btn">
+        <div class="txt-btn">
+        <p>Drivhus 3</p>
+        <h4>Mynte</h4>
+      </div>
+        <img class="ikonbtn" src="assets/ikoner/graf.svg" alt="Graf knap ikon"> 
+      </div>
+      <div class="container-btn dh-btn">
+        <div class="txt-btn">
+        <p>Drivhus 4</p>
+        <h4>Persille</h4>
+      </div>
+        <img class="ikonbtn" src="assets/ikoner/graf.svg" alt="Graf knap ikon"> 
       </div>
     </div>
-    <script src="assets/js/redigering-planter.js" defer></script>
-
-    <!--Modul oversigt-->
-    <div class="wrapper">
-    <a href="hylder.html">
-      <div class="container-btn dh-btn">
-        <div class="txt-btn">
-          <p>Modul 1</p>
-          <h4>Basilikum</h4>
-        </div>
-        <div class="ikon-btn">
-          <img class="ikonbtn" src="assets/ikoner/advarsel.svg" alt="Advarsel ikon">
-      </div>    
-       </div>
-    </a>
-      <div class="container-btn dh-btn">
-        <div class="txt-btn">
-          <p>Modul 2</p>
-          <h4>Basilikum - Mynte</h4>
-        </div>
-      </div>
-
-      <div class="container-btn dh-btn">
-        <div class="txt-btn">
-          <p>Modul 3</p>
-          <h4>Basilikum - Persille</h4>
-        </div>
-      </div>
-
-      <div class="container-btn dh-btn">
-        <div class="txt-btn">
-          <p>Modul 4</p>
-          <h4>Mynte</h4>
-        </div>
-      </div>
-
-    </div>
-
-    <!--Filter soge-->
     <div id="filter-seachbox">
       <h4>Vis kun</h4>
+
+      <!--Filter soge-->
     <div class="filter">
       <input type="checkbox" id="Basilikum" name="Basilikum">
       <label for="Basilikum">Basilikum</label>
@@ -126,9 +91,10 @@
       <button id="save-button">Ok</button>
     </div>
     <script src="assets/js/script.js" defer></script>
+
   </section>
 
-  <!--Pop up menu-->
+<!--Pop up menu-->
 <div class="popup-menu menu">
   <div class="log-details heading">
     <img src="assets/ikoner/profilb.png" alt="Profilbillede - menu">
@@ -151,5 +117,6 @@
     <button class="menubtn">Log ud</button>
 </div>
 <script src="assets/js/burgermenu.js" defer></script>
+
 </body>
 </html>

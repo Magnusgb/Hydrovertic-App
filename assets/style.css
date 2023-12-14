@@ -656,7 +656,7 @@ justify-content: space-between;
 
   .selected::after {
     content: "";
-    background: url("/Assets/Ikoner/arrow.svg");
+    background: url("/assets/ikoner/arrow.svg");
     background-size: 15px;
     background-repeat: no-repeat;
     position: absolute;
