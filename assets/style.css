@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'orgon';
-  src: url('Assets/Orgon-fonts/Orgon-Bold.ttf') format('truetype');
+  src: url('assets/orgon-fonts/orgon-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
   font-family: "orgon";
-  src: url('Assets/Orgon-fonts/Orgon-Regular.ttf') format('truetype');
+  src: url('assets/orgon-fonts/orgon-regular.ttf') format('truetype');
 }
 
 :root {
@@ -18,8 +18,8 @@
   --h2-bot:2rem;
   
   /* Typografi */ 
-  --var-h: 'Orgon-bold', sans-serif;
-  --var-base:'Orgon-regluar',sans-serif;
+  --var-h: 'orgon-bold', sans-serif;
+  --var-base:'orgon-regluar',sans-serif;
 
   /* Typografi str*/ 
   --var-h2:2rem; /* Overskrift */ 
@@ -86,6 +86,12 @@ h3 {
 h2 {
   font-size: var(--var-h2);
   margin-top: var(--h2-top);
+}
+
+button {
+  text-decoration: none;
+  list-style: none;
+  color: black;
 }
 
 /* Ikoner størrelse */
@@ -588,6 +594,8 @@ justify-content: space-between;
   cursor: pointer;
 }
 
+/* Redigering af drivhus,modul og hylde*/
+
 .modal{
     display: none;
     position: fixed;
@@ -629,7 +637,7 @@ justify-content: space-between;
     width: 100%;
     flex-direction: column;
     margin-top: 20px;
-    font-family: 'Orgon-regluar',sans-serif;
+    font-family: 'orgon-regluar',sans-serif;
   }
   
 .select-box .options-container {
@@ -656,7 +664,7 @@ justify-content: space-between;
 
   .selected::after {
     content: "";
-    background: url("/assets/ikoner/arrow.svg");
+    background: url("ikoner/arrow.svg");
     background-size: 15px;
     background-repeat: no-repeat;
     position: absolute;
