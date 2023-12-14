@@ -4,25 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DH1-M1-H1</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="Assets/Logo/Favicon.png">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
 </head>
-
 <body>
   <header>
     <div class="menu-top">
-      <a href="modul.html"><img src="Assets/Ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
-      <img src="Assets/Ikoner/sog.svg" id="button-click" alt="Søgefilter top">
+      <a href="modul.html"><img src="assets/ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
+      <img src="assets/ikoner/sog.svg" id="button-click" alt="Søgefilter top">
     </div>
     <nav class="menu-bottom">
       <a href="index.html">
-        <img src="Assets/Ikoner/overblik.svg" class="ikon-menu"  alt="Overblik ikon menu">
+        <img src="assets/ikoner/overblik.svg" class="ikon-menu"  alt="Overblik ikon menu">
       </a>
-      <a href="notifikation.html"><img class="ikon-menu" src="Assets/Ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
+      <a href="notifikation.html"><img class="ikon-menu" src="assets/ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
       <div class="hamburger">
-        <a href="#"><img class="menuIcon" src="Assets/Ikoner/menu.svg" alt="Burgermenu"></a>
-        <a href="#"><img class="closeIcon" src="Assets/Ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
+        <a href="#"><img class="menuIcon" src="assets/ikoner/menu.svg" alt="Burgermenu"></a>
+        <a href="#"><img class="closeIcon" src="assets/ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
       </div>
     </nav>
   </header>
@@ -33,13 +31,13 @@
     <!--Underoverskrift-->
   <div class="h4-txt">
     <h4>Basilikum</h4>
-    <img src="Assets/Ikoner/rediger.svg" id="modalBtn" alt="Rediger modul ikon">
+    <img src="assets/ikoner/rediger.svg" id="modalBtn" alt="Rediger modul ikon">
   </div>
 
       <!--Pop up redigering modul/hylde-->
     <div id="simpleModal" class="modal"> 
       <div class="modal-content">
-        <img src="Assets/Ikoner/x-menu.svg" alt="X til at lukke" class="closeBtn">
+        <img src="assets/ikoner/x-menu.svg" alt="X til at lukke" class="closeBtn">
 
         <div class="modal-header">
           <h3>Redigering af hylde</h3>
@@ -73,22 +71,23 @@
         <button class="gemBtn">Gem</button>
       </div>
     </div>
-    <script src="redigering-planter.js" defer></script>
+    <script src="assets/js/redigering-planter.js" defer></script>
       <div class="container-noti">
         <div class="container-data">
-          <img src="Assets/Ikoner/advarsel.svg" alt="Advarsel ikon">
+          <img src="assets/ikoner/advarsel.svg" alt="Advarsel ikon">
           <h3>For høje temperaturer</h3>
-          <img class="xikon-noti x-container" src="Assets/Ikoner/x-menu.svg" alt="Kryds til at lukke">
+          <img class="xikon-noti x-container" src="assets/ikoner/x-menu.svg" alt="Kryds til at lukke">
         </div>
         <h4 class="h4-container">Tidspunkt: 9:32 - 27/11 2023</h4>
         <div class="container-noti-ikon">
-          <img src="Assets/Ikoner/anbefaling.svg" alt="Advarsels ikon">  
+          <img src="assets/ikoner/anbefaling.svg" alt="Advarsels ikon">  
           <p>For høje temperaturer</p>
        <span class="container-clr1"></span>
         </div>
        </div>
        
-    <h2 class="h2-data">Data</h2>
+<!--Data indhold-->
+  <h2 class="h2-data">Data</h2>
   <div class="data-web">
     <div class="containerbtn">
     <button class="data-btn clr1">Temperatur</button>
@@ -100,7 +99,7 @@
 <div class="dropdown-wrapper">
 <div class="dropdown">
   <a>Tidsramme</a>
-  <img src="Assets/Ikoner/arrow.svg" alt="Dropdown pil">
+  <img src="assets/ikoner/arrow.svg" alt="Dropdown pil">
   <div class="dropdown-content">
     <a href="#">1 Dag</a>
     <a href="#">1 Uge</a>
@@ -111,7 +110,7 @@
 
 <div class="dropdown">
   <a>Interval</a>
-  <img src="Assets/Ikoner/arrow.svg" alt="Dropdown pil">
+  <img src="assets/ikoner/arrow.svg" alt="Dropdown pil">
   <div class="dropdown-content">
     <a href="#">15 Minutter</a>
     <a href="#">30 Minutter</a>
@@ -123,7 +122,7 @@
 
 <div class="dropdown">
   <a>Graf</a>
-  <img class="img-dropdown" src="Assets/Ikoner/arrow.svg" alt="Dropdown pil">
+  <img class="img-dropdown" src="assets/ikoner/arrow.svg" alt="Dropdown pil">
   <div class="dropdown-content">
     <a href="#">Søjle</a>
     <a href="#">Linje</a>
@@ -132,7 +131,7 @@
 </div>
 </div>
 </div>
-<img src="Assets/Ikoner/data-temp.png" class="data-img" alt="Data graf på temperaturer">
+<img src="assets/ikoner/data-temp.png" class="data-img" alt="Data graf på temperaturer">
 
 <!--Filter søgeboks-->
 <div id="filter-seachbox">
@@ -152,30 +151,31 @@
   <button id="save-button">Ok</button>
 </div>
 </section>
+<script src="assets/js/script.js" defer></script>
 
 <!--Pop up menu-->
 <div class="popup-menu menu">
   <div class="log-details heading">
-    <img src="Assets/Ikoner/profilb.png" alt="Profilbillede - menu">
+    <img src="assets/ikoner/profilb.png" alt="Profilbillede - menu">
     <p>Jens Mikkelsen <br> Gartneri</p>
   </div>
 <div class="container-menu">
   <div class="dh-btn">
       <p class="txt-btn">Rediger drivhus opsætning</p>
-      <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+      <img src="assets/ikoner/arrow.svg" alt="Advarsel ikon">   
   </div>
   <div class="dh-btn menuItem">
     <p class="txt-btn menuItem">Opret ny medarbejder</p>
-    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+    <img src="assets/ikoner/arrow.svg" alt="Advarsel ikon">   
   </div>
   <div class="dh-btn menuItem">
     <p class="txt-btn">Indstillinger</p>
-    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+    <img src="assets/ikoner/arrow.svg" alt="Advarsel ikon">   
   </div>
   </div>
     <button class="menubtn">Log ud</button>
 </div>
-<script src="burgermenu.js" defer></script>
+<script src="assets/js/burgermenu.js" defer></script>
 
 </body>
 </html>

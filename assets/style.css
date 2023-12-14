@@ -373,10 +373,11 @@ justify-content: space-between;
   cursor:pointer;
   background-color: var(--var-btn6);
   box-shadow: var(--var-boxs-btn);
-  height: 15vh;
+  gap: 1.2rem;
   margin-bottom: var(--h2-bot);
   width: 80%;
-  margin-inline: var(--margin-in) ;
+  margin-inline: var(--margin-in);
+  padding: 10px 0;
 }
 
 .container-menu img {
@@ -734,7 +735,11 @@ justify-content: space-between;
 
 .data-img {
   margin-top: 50px;
-  width: 690px;
+  width: 620px;
+}
+
+.data-popup {
+  height: 90vh;
 }
 }
 /* Responsivt web */ 
@@ -789,5 +794,13 @@ margin-right: 27rem;
 .menubtn {
   width: 60%;
   margin-right: 18.5rem;
+}
+
+.data-img {
+  width: 690px;
+}
+
+.data-popup {
+  height: 140vh;
 }
 }

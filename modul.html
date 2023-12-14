@@ -4,29 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DH1</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="Assets/Logo/Favicon.png">
-  <script src="redigering-planter.js" defer></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
 </head>
 
 <body>
   <header>
     <div class="menu-top">
-      <a href="index.html"><img src="Assets/Ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
-      <img src="Assets/Ikoner/sog.svg" id="button-click" alt="Søgefilter top">
+      <a href="index.html"><img src="assets/ikoner/arrow-v.svg" class="venstrepil" alt="Venstre klik pil"></a>
+      <img src="assets/ikoner/sog.svg" id="button-click" alt="Søgefilter top">
     </div>
     <nav class="menu-bottom">
       <a href="index.html">
-        <img src="Assets/Ikoner/overblik.svg" alt="Overblik ikon menu">
+        <img src="assets/ikoner/overblik.svg" alt="Overblik ikon menu">
       </a>
-      <a href="notifikation.html"><img src="Assets/Ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
+      <a href="notifikation.html"><img src="assets/ikoner/notikfikation.svg" alt="Notifikation Menu"></a>
       <div class="hamburger">
-        <a href="#"><img class="menuIcon" src="Assets/Ikoner/menu.svg" alt="Burgermenu"></a>
-        <a href="#"><img class="closeIcon" src="Assets/Ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
+        <a href="#"><img class="menuIcon" src="assets/ikoner/menu.svg" alt="Burgermenu"></a>
+        <a href="#"><img class="closeIcon" src="assets/ikoner/x-menu.svg" alt="Luk Burgermenu"></a>
       </div>
     </nav>
   </header>
-
   <section> 
     <div class="heading">
       <h2>DH1</h2>
@@ -35,54 +33,44 @@
   <!--Underoverskrift-->
     <div class="h4-txt">
       <h4>Basilikum - Mynte - Persille</h4>
-      <img src="Assets/Ikoner/rediger.svg" id="modalBtn" alt="Rediger modul ikon">
+      <img src="assets/ikoner/rediger.svg" id="modalBtn" alt="Rediger modul ikon">
     </div>
 
 
     <!--Pop up redigering modul/hylde-->
     <div id="simpleModal" class="modal"> 
       <div class="modal-content">
-        <img src="Assets/Ikoner/x-menu.svg" class="closeBtn" alt="Lukning af modal">
-
+        <img src="assets/ikoner/x-menu.svg" class="closeBtn" alt="Lukning af modal">
         <div class="modal-header">
           <h3>Redigering af hele drivhuset</h3>
         </div>
-
         <div class="modal-body">
-    
           <div class="select-box">
             <div class="options-container">
               <div class="option">
                 <input id="basilikum" class="plante">
                 <label for="basilikum">Basilikum</label>
               </div>
-
               <div class="option">
                 <input id="salat" class="plante">
                 <label for="salat">Persille</label>
               </div>
-
               <div class="option">
                 <input id="mynte" class="plante">
                 <label for="mynte">Mynte</label>
               </div>
-
             </div>
             <div class="selected">
               Vælg plante
             </div>
           </div>
-
         </div>
-
         <button class="gemBtn">Gem</button>
       </div>
     </div>
+    <script src="assets/js/redigering-planter.js" defer></script>
 
-  
     <div class="wrapper">
-
-
     <a href="hylder.html">
       <div class="container-btn dh-btn">
         <div class="txt-btn">
@@ -90,11 +78,10 @@
           <h4>Basilikum</h4>
         </div>
         <div class="ikon-btn">
-          <img class="ikonbtn" src="Assets/Ikoner/advarsel.svg" alt="Advarsel ikon">
+          <img class="ikonbtn" src="assets/ikoner/advarsel.svg" alt="Advarsel ikon">
       </div>    
        </div>
     </a>
-
       <div class="container-btn dh-btn">
         <div class="txt-btn">
           <p>Modul 2</p>
@@ -133,31 +120,31 @@
     </div>
       <button id="save-button">Ok</button>
     </div>
-    <script src="script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
   </section>
 
   <!--Pop up menu-->
 <div class="popup-menu menu">
   <div class="log-details heading">
-    <img src="Assets/Ikoner/profilb.png" alt="Profilbillede - menu">
+    <img src="assets/ikoner/profilb.png" alt="Profilbillede - menu">
     <p>Jens Mikkelsen <br> Gartneri</p>
   </div>
 <div class="container-menu">
   <div class="dh-btn">
       <p class="txt-btn">Rediger drivhus opsætning</p>
-      <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+      <img src="assets/ikoner/arrow.svg" alt="Advarsel ikon">   
   </div>
   <div class="dh-btn menuItem">
     <p class="txt-btn menuItem">Opret ny medarbejder</p>
-    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+    <img src="assets/ikoner/arrow.svg" alt="Advarsel ikon">   
   </div>
   <div class="dh-btn menuItem">
     <p class="txt-btn">Indstillinger</p>
-    <img src="Assets/Ikoner/arrow.svg" alt="Advarsel ikon">   
+    <img src="assets/ikoner/arrow.svg" alt="Advarsel ikon">   
   </div>
   </div>
     <button class="menubtn">Log ud</button>
 </div>
-<script src="burgermenu.js" defer></script>
+<script src="assets/js/burgermenu.js" defer></script>
 </body>
 </html>
